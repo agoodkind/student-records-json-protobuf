@@ -1,14 +1,47 @@
 package com.agoodkind.studentRecords;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.*;
+
+class CourseMark {
+
+    private Integer CourseScore;
+    private String CourseName;
+
+    public CourseMark(String CourseName, Integer CourseScore) {
+        this.CourseName = CourseName;
+        this.CourseScore = CourseScore;
+    }
+
+    public Integer getCourseScore() {
+        return CourseScore;
+    }
+
+    public String getCourseName() {
+        return CourseName;
+    }
+
+    public void setCourseName(String courseName) {
+        CourseName = courseName;
+    }
+
+    public void setCourseScore(Integer courseScore) {
+        CourseScore = courseScore;
+    }
+
+
+}
+
 
 public class InputRecord {
     // <id>,<LastName>,<FirstName>,[<email>]:<Course1>,<Marks1>:<Course2>,<Mark s2>:...:<CourseN1>,<MarksN>
+
     private Integer id;
     private String LastName;
     private String FirstName;
     private String email;
-    private HashMap<String, Integer> courseMarkDict = new HashMap<>();
+    private ArrayList<CourseMark> CourseMarks = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -26,12 +59,8 @@ public class InputRecord {
         return email;
     }
 
-    public HashMap<String, Integer> getCourseMarkDict() {
-        return courseMarkDict;
-    }
-
-    public Integer getMarkOfCourse(String courseName) {
-        return courseMarkDict.get(courseName);
+    public ArrayList<CourseMark> getCourseMarks() {
+        return this.CourseMarks;
     }
 
     public boolean hasId() {
@@ -51,7 +80,7 @@ public class InputRecord {
     }
 
     public boolean hasCourseMarks() {
-        return this.courseMarkDict.size() > 0;
+        return this.CourseMarks.size() > 0;
     }
 
     public void setId(int id) {
@@ -70,17 +99,7 @@ public class InputRecord {
         this.email = email;
     }
 
-    public void setCourseMarkDict(HashMap<String, Integer> courseMarkDict) {
-        this.courseMarkDict = courseMarkDict;
-    }
-
     public void setMarkForCourse(String courseName, Integer courseMark) {
-        this.courseMarkDict.put(courseName, courseMark);
-    }
-
-    @Override
-    public String toString() {
-        return "InputRecord{" +
-                "id=" + id + '}';
+        this.CourseMarks.add(new CourseMark(courseName, courseMark));
     }
 }

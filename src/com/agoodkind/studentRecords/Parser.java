@@ -13,6 +13,7 @@ public class Parser {
     public Parser(String filePathName) throws FileNotFoundException {
         inputRecords = new ArrayList<>();
         fileReader = new FileReader(filePathName);
+        this.readLines();
     }
 
     private List<String> split(String str, String token){

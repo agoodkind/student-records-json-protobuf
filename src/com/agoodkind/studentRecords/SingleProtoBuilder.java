@@ -29,9 +29,9 @@ public class SingleProtoBuilder {
             this.studentRecordProtoBuilder.setEmail(this.studentRecord.getEmail());
         }
         if (this.studentRecord.hasCourseMarks()) {
-            for (Map.Entry<String, Integer> course : this.studentRecord.getCourseMarkDict().entrySet()) {
-                String courseName = course.getKey();
-                Integer courseMark = course.getValue();
+            for (CourseMark course : this.studentRecord.getCourseMarks()) {
+                String courseName = course.getCourseName();
+                Integer courseMark = course.getCourseScore();
                 this.studentRecordProtoBuilder.addMarks(CourseMarks.newBuilder().setName(courseName).setScore(courseMark).build());
             }
         }
