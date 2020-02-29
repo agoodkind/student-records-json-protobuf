@@ -31,3 +31,10 @@ crashlytics-build.properties
 fabric.properties
 .DS_Store
 *.jar
+/result.json
+/input.txt
+/json.java
+/output_json.txt
+/output_protobuf.txt
+/proto.java
+/result_protobuf

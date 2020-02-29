@@ -1,8 +1,92 @@
 package com.agoodkind.studentRecords;
-
+import com.agoodkind.studentRecords.RecordProto.Student;
+import com.agoodkind.studentRecords.RecordProto.CourseMarks;
 import com.google.gson.annotations.SerializedName;
 
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
+
+class InputRecordFromStudentRecordProto {
+    public static InputRecord convertRecord(Student studentRecordProto) {
+        InputRecord parsed = new InputRecord();
+        parsed.setId(Integer.parseInt(studentRecordProto.getId()));
+        parsed.setFirstName(studentRecordProto.getFirstname());
+        parsed.setLastName(studentRecordProto.getLastname());
+
+        if (studentRecordProto.hasEmail()) {
+            parsed.setEmail(studentRecordProto.getEmail());
+        }
+
+        if (studentRecordProto.getMarksCount() > 0) {
+            for (RecordProto.CourseMarks course : studentRecordProto.getMarksList()) {
+                parsed.setMarkForCourse(course.getName(), course.getScore());
+            }
+        }
+
+        return parsed;
+    }
+}
+
+class InputRecordListFromResultProto {
+
+    public static InputRecordList InputRecordsFromResult(RecordProto.Result inputResult) {
+        InputRecordList inputRecordList = new InputRecordList();
+        for (RecordProto.Student studentRecord : inputResult.getStudentList()) {
+            inputRecordList.addRecord(InputRecordFromStudentRecordProto.convertRecord(studentRecord));
+        }
+
+        return inputRecordList;
+    }
+
+}
+
+class InputRecordList {
+
+    private List<InputRecord> inputRecordList;
+
+    public InputRecordList() {
+        this.inputRecordList = new ArrayList<>();
+    }
+
+    public List<InputRecord> getInputRecordList() {
+        return inputRecordList;
+    }
+
+    public void addRecord(InputRecord record) {
+        this.inputRecordList.add(record);
+    }
+
+    public void setInputRecordList(List<InputRecord> inputRecordList) {
+        this.inputRecordList = inputRecordList;
+    }
+
+    public void setInputRecordList(InputRecord[] inputRecordList) {
+        this.inputRecordList = Arrays.asList(inputRecordList);
+    }
+
+    public void writeToAndFlushAndClose(FileWriter fileWriter) throws IOException {
+
+        fileWriter.write(this.toString());
+        fileWriter.flush();
+        fileWriter.close();
+        // write out file here
+
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder toStringBuilder = new StringBuilder();
+        for (InputRecord inputRecord : this.inputRecordList) {
+            toStringBuilder.append(inputRecord.toString());
+            toStringBuilder.append("\n");
+
+        }
+
+        return toStringBuilder.toString();
+    }
+}
 
 class CourseMark {
 
@@ -36,9 +120,10 @@ class CourseMark {
 
 public class InputRecord {
     // <id>,<LastName>,<FirstName>,[<email>]:<Course1>,<Marks1>:<Course2>,<Mark s2>:...:<CourseN1>,<MarksN>
-
     private Integer id;
+    @SerializedName(value = "lastname")
     private String LastName;
+    @SerializedName(value = "firstname")
     private String FirstName;
     private String email;
     private ArrayList<CourseMark> CourseMarks = new ArrayList<>();
@@ -102,4 +187,34 @@ public class InputRecord {
     public void setMarkForCourse(String courseName, Integer courseMark) {
         this.CourseMarks.add(new CourseMark(courseName, courseMark));
     }
+
+    @Override
+    public String toString() {
+        StringBuilder toStringBuilder = new StringBuilder();
+
+        toStringBuilder.append(this.id);
+        toStringBuilder.append(",");
+        toStringBuilder.append(this.LastName);
+        toStringBuilder.append(",");
+        toStringBuilder.append(this.FirstName);
+
+        if (this.hasEmail()) {
+            toStringBuilder.append(",");
+            toStringBuilder.append(this.email);
+        }
+
+        if (this.hasCourseMarks()) {
+
+            for (CourseMark courseMark : this.CourseMarks) {
+                toStringBuilder.append(":");
+                toStringBuilder.append(courseMark.getCourseName());
+                toStringBuilder.append(",");
+                toStringBuilder.append(courseMark.getCourseScore());
+            }
+        }
+
+        return toStringBuilder.toString();
+    }
+
+
 }

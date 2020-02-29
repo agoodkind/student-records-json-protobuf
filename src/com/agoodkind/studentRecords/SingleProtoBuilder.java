@@ -2,34 +2,38 @@ package com.agoodkind.studentRecords;
 import com.agoodkind.studentRecords.RecordProto.Student;
 import com.agoodkind.studentRecords.RecordProto.CourseMarks;
 
-import java.util.Map;
-
 public class SingleProtoBuilder {
 
-    private InputRecord studentRecord;
+    private InputRecord studentInputRecord;
     private Student.Builder studentRecordProtoBuilder;
     private Student studentRecordProto;
 
     public SingleProtoBuilder(InputRecord record) {
-        this.studentRecord = record;
+        this.studentInputRecord = record;
         this.studentRecordProtoBuilder = Student.newBuilder();
     }
 
     public Student buildProto() {
-        if (this.studentRecord.hasId()) {
-            this.studentRecordProtoBuilder.setId(Integer.toString(this.studentRecord.getId()));
+        if (this.studentInputRecord.hasId()) {
+            this.studentRecordProtoBuilder.setId(Integer.toString(this.studentInputRecord.getId()));
+        } else {
+            this.studentRecordProtoBuilder.setId(Integer.toString(0));
         }
-        if (this.studentRecord.hasLastName()) {
-            this.studentRecordProtoBuilder.setLastname(this.studentRecord.getLastName());
+        if (this.studentInputRecord.hasLastName()) {
+            this.studentRecordProtoBuilder.setLastname(this.studentInputRecord.getLastName());
+        } else {
+            this.studentRecordProtoBuilder.setLastname("null");
         }
-        if (this.studentRecord.hasFirstName()) {
-            this.studentRecordProtoBuilder.setFirstname(this.studentRecord.getFirstName());
+        if (this.studentInputRecord.hasFirstName()) {
+            this.studentRecordProtoBuilder.setFirstname(this.studentInputRecord.getFirstName());
+        } else {
+            this.studentRecordProtoBuilder.setFirstname("null");
         }
-        if (this.studentRecord.hasEmail()) {
-            this.studentRecordProtoBuilder.setEmail(this.studentRecord.getEmail());
+        if (this.studentInputRecord.hasEmail()) {
+            this.studentRecordProtoBuilder.setEmail(this.studentInputRecord.getEmail());
         }
-        if (this.studentRecord.hasCourseMarks()) {
-            for (CourseMark course : this.studentRecord.getCourseMarks()) {
+        if (this.studentInputRecord.hasCourseMarks()) {
+            for (CourseMark course : this.studentInputRecord.getCourseMarks()) {
                 String courseName = course.getCourseName();
                 Integer courseMark = course.getCourseScore();
                 this.studentRecordProtoBuilder.addMarks(CourseMarks.newBuilder().setName(courseName).setScore(courseMark).build());

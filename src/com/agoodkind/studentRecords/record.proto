@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package agoodkind.studentRecords;
+package com.agoodkind.studentRecords;
 
 option java_package = "com.agoodkind.studentRecords";
 option java_outer_classname = "RecordProto";

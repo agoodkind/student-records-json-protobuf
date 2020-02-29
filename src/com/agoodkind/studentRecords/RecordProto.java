@@ -15,7 +15,7 @@ public final class RecordProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   public interface CourseMarksOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:agoodkind.studentRecords.CourseMarks)
+      // @@protoc_insertion_point(interface_extends:com.agoodkind.studentRecords.CourseMarks)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -47,11 +47,11 @@ public final class RecordProto {
     int getScore();
   }
   /**
-   * Protobuf type {@code agoodkind.studentRecords.CourseMarks}
+   * Protobuf type {@code com.agoodkind.studentRecords.CourseMarks}
    */
   public  static final class CourseMarks extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:agoodkind.studentRecords.CourseMarks)
+      // @@protoc_insertion_point(message_implements:com.agoodkind.studentRecords.CourseMarks)
       CourseMarksOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use CourseMarks.newBuilder() to construct.
@@ -125,13 +125,13 @@ public final class RecordProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_CourseMarks_descriptor;
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_CourseMarks_fieldAccessorTable
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_CourseMarks_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.agoodkind.studentRecords.RecordProto.CourseMarks.class, com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder.class);
     }
@@ -375,21 +375,21 @@ public final class RecordProto {
       return builder;
     }
     /**
-     * Protobuf type {@code agoodkind.studentRecords.CourseMarks}
+     * Protobuf type {@code com.agoodkind.studentRecords.CourseMarks}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:agoodkind.studentRecords.CourseMarks)
+        // @@protoc_insertion_point(builder_implements:com.agoodkind.studentRecords.CourseMarks)
         com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_CourseMarks_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_CourseMarks_fieldAccessorTable
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_CourseMarks_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.agoodkind.studentRecords.RecordProto.CourseMarks.class, com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder.class);
       }
@@ -422,7 +422,7 @@ public final class RecordProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_CourseMarks_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor;
       }
 
       @java.lang.Override
@@ -672,10 +672,10 @@ public final class RecordProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:agoodkind.studentRecords.CourseMarks)
+      // @@protoc_insertion_point(builder_scope:com.agoodkind.studentRecords.CourseMarks)
     }
 
-    // @@protoc_insertion_point(class_scope:agoodkind.studentRecords.CourseMarks)
+    // @@protoc_insertion_point(class_scope:com.agoodkind.studentRecords.CourseMarks)
     private static final com.agoodkind.studentRecords.RecordProto.CourseMarks DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.agoodkind.studentRecords.RecordProto.CourseMarks();
@@ -713,7 +713,7 @@ public final class RecordProto {
   }
 
   public interface StudentOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:agoodkind.studentRecords.Student)
+      // @@protoc_insertion_point(interface_extends:com.agoodkind.studentRecords.Student)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -785,35 +785,35 @@ public final class RecordProto {
         getEmailBytes();
 
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     java.util.List<com.agoodkind.studentRecords.RecordProto.CourseMarks> 
         getMarksList();
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     com.agoodkind.studentRecords.RecordProto.CourseMarks getMarks(int index);
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     int getMarksCount();
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     java.util.List<? extends com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder> 
         getMarksOrBuilderList();
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder getMarksOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code agoodkind.studentRecords.Student}
+   * Protobuf type {@code com.agoodkind.studentRecords.Student}
    */
   public  static final class Student extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:agoodkind.studentRecords.Student)
+      // @@protoc_insertion_point(message_implements:com.agoodkind.studentRecords.Student)
       StudentOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Student.newBuilder() to construct.
@@ -916,13 +916,13 @@ public final class RecordProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Student_descriptor;
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Student_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Student_fieldAccessorTable
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Student_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.agoodkind.studentRecords.RecordProto.Student.class, com.agoodkind.studentRecords.RecordProto.Student.Builder.class);
     }
@@ -1111,32 +1111,32 @@ public final class RecordProto {
     public static final int MARKS_FIELD_NUMBER = 5;
     private java.util.List<com.agoodkind.studentRecords.RecordProto.CourseMarks> marks_;
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     public java.util.List<com.agoodkind.studentRecords.RecordProto.CourseMarks> getMarksList() {
       return marks_;
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     public java.util.List<? extends com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder> 
         getMarksOrBuilderList() {
       return marks_;
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     public int getMarksCount() {
       return marks_.size();
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     public com.agoodkind.studentRecords.RecordProto.CourseMarks getMarks(int index) {
       return marks_.get(index);
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+     * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
      */
     public com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder getMarksOrBuilder(
         int index) {
@@ -1373,21 +1373,21 @@ public final class RecordProto {
       return builder;
     }
     /**
-     * Protobuf type {@code agoodkind.studentRecords.Student}
+     * Protobuf type {@code com.agoodkind.studentRecords.Student}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:agoodkind.studentRecords.Student)
+        // @@protoc_insertion_point(builder_implements:com.agoodkind.studentRecords.Student)
         com.agoodkind.studentRecords.RecordProto.StudentOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Student_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Student_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Student_fieldAccessorTable
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Student_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.agoodkind.studentRecords.RecordProto.Student.class, com.agoodkind.studentRecords.RecordProto.Student.Builder.class);
       }
@@ -1431,7 +1431,7 @@ public final class RecordProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Student_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Student_descriptor;
       }
 
       @java.lang.Override
@@ -1961,7 +1961,7 @@ public final class RecordProto {
           com.agoodkind.studentRecords.RecordProto.CourseMarks, com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder, com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder> marksBuilder_;
 
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public java.util.List<com.agoodkind.studentRecords.RecordProto.CourseMarks> getMarksList() {
         if (marksBuilder_ == null) {
@@ -1971,7 +1971,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public int getMarksCount() {
         if (marksBuilder_ == null) {
@@ -1981,7 +1981,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.CourseMarks getMarks(int index) {
         if (marksBuilder_ == null) {
@@ -1991,7 +1991,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder setMarks(
           int index, com.agoodkind.studentRecords.RecordProto.CourseMarks value) {
@@ -2008,7 +2008,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder setMarks(
           int index, com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder builderForValue) {
@@ -2022,7 +2022,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder addMarks(com.agoodkind.studentRecords.RecordProto.CourseMarks value) {
         if (marksBuilder_ == null) {
@@ -2038,7 +2038,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder addMarks(
           int index, com.agoodkind.studentRecords.RecordProto.CourseMarks value) {
@@ -2055,7 +2055,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder addMarks(
           com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder builderForValue) {
@@ -2069,7 +2069,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder addMarks(
           int index, com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder builderForValue) {
@@ -2083,7 +2083,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder addAllMarks(
           java.lang.Iterable<? extends com.agoodkind.studentRecords.RecordProto.CourseMarks> values) {
@@ -2098,7 +2098,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder clearMarks() {
         if (marksBuilder_ == null) {
@@ -2111,7 +2111,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public Builder removeMarks(int index) {
         if (marksBuilder_ == null) {
@@ -2124,14 +2124,14 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder getMarksBuilder(
           int index) {
         return getMarksFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder getMarksOrBuilder(
           int index) {
@@ -2141,7 +2141,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public java.util.List<? extends com.agoodkind.studentRecords.RecordProto.CourseMarksOrBuilder> 
            getMarksOrBuilderList() {
@@ -2152,14 +2152,14 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder addMarksBuilder() {
         return getMarksFieldBuilder().addBuilder(
             com.agoodkind.studentRecords.RecordProto.CourseMarks.getDefaultInstance());
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder addMarksBuilder(
           int index) {
@@ -2167,7 +2167,7 @@ public final class RecordProto {
             index, com.agoodkind.studentRecords.RecordProto.CourseMarks.getDefaultInstance());
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.CourseMarks marks = 5;</code>
+       * <code>repeated .com.agoodkind.studentRecords.CourseMarks marks = 5;</code>
        */
       public java.util.List<com.agoodkind.studentRecords.RecordProto.CourseMarks.Builder> 
            getMarksBuilderList() {
@@ -2200,10 +2200,10 @@ public final class RecordProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:agoodkind.studentRecords.Student)
+      // @@protoc_insertion_point(builder_scope:com.agoodkind.studentRecords.Student)
     }
 
-    // @@protoc_insertion_point(class_scope:agoodkind.studentRecords.Student)
+    // @@protoc_insertion_point(class_scope:com.agoodkind.studentRecords.Student)
     private static final com.agoodkind.studentRecords.RecordProto.Student DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.agoodkind.studentRecords.RecordProto.Student();
@@ -2241,39 +2241,39 @@ public final class RecordProto {
   }
 
   public interface ResultOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:agoodkind.studentRecords.Result)
+      // @@protoc_insertion_point(interface_extends:com.agoodkind.studentRecords.Result)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     java.util.List<com.agoodkind.studentRecords.RecordProto.Student> 
         getStudentList();
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     com.agoodkind.studentRecords.RecordProto.Student getStudent(int index);
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     int getStudentCount();
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     java.util.List<? extends com.agoodkind.studentRecords.RecordProto.StudentOrBuilder> 
         getStudentOrBuilderList();
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     com.agoodkind.studentRecords.RecordProto.StudentOrBuilder getStudentOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code agoodkind.studentRecords.Result}
+   * Protobuf type {@code com.agoodkind.studentRecords.Result}
    */
   public  static final class Result extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:agoodkind.studentRecords.Result)
+      // @@protoc_insertion_point(message_implements:com.agoodkind.studentRecords.Result)
       ResultOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Result.newBuilder() to construct.
@@ -2348,13 +2348,13 @@ public final class RecordProto {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Result_descriptor;
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Result_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Result_fieldAccessorTable
+      return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Result_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.agoodkind.studentRecords.RecordProto.Result.class, com.agoodkind.studentRecords.RecordProto.Result.Builder.class);
     }
@@ -2362,32 +2362,32 @@ public final class RecordProto {
     public static final int STUDENT_FIELD_NUMBER = 1;
     private java.util.List<com.agoodkind.studentRecords.RecordProto.Student> student_;
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     public java.util.List<com.agoodkind.studentRecords.RecordProto.Student> getStudentList() {
       return student_;
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     public java.util.List<? extends com.agoodkind.studentRecords.RecordProto.StudentOrBuilder> 
         getStudentOrBuilderList() {
       return student_;
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     public int getStudentCount() {
       return student_.size();
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     public com.agoodkind.studentRecords.RecordProto.Student getStudent(int index) {
       return student_.get(index);
     }
     /**
-     * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+     * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
      */
     public com.agoodkind.studentRecords.RecordProto.StudentOrBuilder getStudentOrBuilder(
         int index) {
@@ -2558,21 +2558,21 @@ public final class RecordProto {
       return builder;
     }
     /**
-     * Protobuf type {@code agoodkind.studentRecords.Result}
+     * Protobuf type {@code com.agoodkind.studentRecords.Result}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:agoodkind.studentRecords.Result)
+        // @@protoc_insertion_point(builder_implements:com.agoodkind.studentRecords.Result)
         com.agoodkind.studentRecords.RecordProto.ResultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Result_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Result_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Result_fieldAccessorTable
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Result_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.agoodkind.studentRecords.RecordProto.Result.class, com.agoodkind.studentRecords.RecordProto.Result.Builder.class);
       }
@@ -2608,7 +2608,7 @@ public final class RecordProto {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.agoodkind.studentRecords.RecordProto.internal_static_agoodkind_studentRecords_Result_descriptor;
+        return com.agoodkind.studentRecords.RecordProto.internal_static_com_agoodkind_studentRecords_Result_descriptor;
       }
 
       @java.lang.Override
@@ -2760,7 +2760,7 @@ public final class RecordProto {
           com.agoodkind.studentRecords.RecordProto.Student, com.agoodkind.studentRecords.RecordProto.Student.Builder, com.agoodkind.studentRecords.RecordProto.StudentOrBuilder> studentBuilder_;
 
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public java.util.List<com.agoodkind.studentRecords.RecordProto.Student> getStudentList() {
         if (studentBuilder_ == null) {
@@ -2770,7 +2770,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public int getStudentCount() {
         if (studentBuilder_ == null) {
@@ -2780,7 +2780,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.Student getStudent(int index) {
         if (studentBuilder_ == null) {
@@ -2790,7 +2790,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder setStudent(
           int index, com.agoodkind.studentRecords.RecordProto.Student value) {
@@ -2807,7 +2807,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder setStudent(
           int index, com.agoodkind.studentRecords.RecordProto.Student.Builder builderForValue) {
@@ -2821,7 +2821,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder addStudent(com.agoodkind.studentRecords.RecordProto.Student value) {
         if (studentBuilder_ == null) {
@@ -2837,7 +2837,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder addStudent(
           int index, com.agoodkind.studentRecords.RecordProto.Student value) {
@@ -2854,7 +2854,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder addStudent(
           com.agoodkind.studentRecords.RecordProto.Student.Builder builderForValue) {
@@ -2868,7 +2868,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder addStudent(
           int index, com.agoodkind.studentRecords.RecordProto.Student.Builder builderForValue) {
@@ -2882,7 +2882,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder addAllStudent(
           java.lang.Iterable<? extends com.agoodkind.studentRecords.RecordProto.Student> values) {
@@ -2897,7 +2897,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder clearStudent() {
         if (studentBuilder_ == null) {
@@ -2910,7 +2910,7 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public Builder removeStudent(int index) {
         if (studentBuilder_ == null) {
@@ -2923,14 +2923,14 @@ public final class RecordProto {
         return this;
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.Student.Builder getStudentBuilder(
           int index) {
         return getStudentFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.StudentOrBuilder getStudentOrBuilder(
           int index) {
@@ -2940,7 +2940,7 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public java.util.List<? extends com.agoodkind.studentRecords.RecordProto.StudentOrBuilder> 
            getStudentOrBuilderList() {
@@ -2951,14 +2951,14 @@ public final class RecordProto {
         }
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.Student.Builder addStudentBuilder() {
         return getStudentFieldBuilder().addBuilder(
             com.agoodkind.studentRecords.RecordProto.Student.getDefaultInstance());
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public com.agoodkind.studentRecords.RecordProto.Student.Builder addStudentBuilder(
           int index) {
@@ -2966,7 +2966,7 @@ public final class RecordProto {
             index, com.agoodkind.studentRecords.RecordProto.Student.getDefaultInstance());
       }
       /**
-       * <code>repeated .agoodkind.studentRecords.Student student = 1;</code>
+       * <code>repeated .com.agoodkind.studentRecords.Student student = 1;</code>
        */
       public java.util.List<com.agoodkind.studentRecords.RecordProto.Student.Builder> 
            getStudentBuilderList() {
@@ -2999,10 +2999,10 @@ public final class RecordProto {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:agoodkind.studentRecords.Result)
+      // @@protoc_insertion_point(builder_scope:com.agoodkind.studentRecords.Result)
     }
 
-    // @@protoc_insertion_point(class_scope:agoodkind.studentRecords.Result)
+    // @@protoc_insertion_point(class_scope:com.agoodkind.studentRecords.Result)
     private static final com.agoodkind.studentRecords.RecordProto.Result DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.agoodkind.studentRecords.RecordProto.Result();
@@ -3040,20 +3040,20 @@ public final class RecordProto {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_agoodkind_studentRecords_CourseMarks_descriptor;
+    internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_agoodkind_studentRecords_CourseMarks_fieldAccessorTable;
+      internal_static_com_agoodkind_studentRecords_CourseMarks_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_agoodkind_studentRecords_Student_descriptor;
+    internal_static_com_agoodkind_studentRecords_Student_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_agoodkind_studentRecords_Student_fieldAccessorTable;
+      internal_static_com_agoodkind_studentRecords_Student_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_agoodkind_studentRecords_Result_descriptor;
+    internal_static_com_agoodkind_studentRecords_Result_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_agoodkind_studentRecords_Result_fieldAccessorTable;
+      internal_static_com_agoodkind_studentRecords_Result_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3063,36 +3063,37 @@ public final class RecordProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\014record.proto\022\030agoodkind.studentRecords" +
-      "\"*\n\013CourseMarks\022\014\n\004name\030\001 \001(\t\022\r\n\005score\030\002" +
-      " \001(\005\"\177\n\007Student\022\n\n\002id\030\001 \002(\t\022\020\n\010lastname\030" +
-      "\002 \002(\t\022\021\n\tfirstname\030\003 \002(\t\022\r\n\005email\030\004 \001(\t\022" +
-      "4\n\005marks\030\005 \003(\0132%.agoodkind.studentRecord" +
-      "s.CourseMarks\"<\n\006Result\0222\n\007student\030\001 \003(\013" +
-      "2!.agoodkind.studentRecords.StudentB+\n\034c" +
-      "om.agoodkind.studentRecordsB\013RecordProto"
+      "\n\014record.proto\022\034com.agoodkind.studentRec" +
+      "ords\"*\n\013CourseMarks\022\014\n\004name\030\001 \001(\t\022\r\n\005sco" +
+      "re\030\002 \001(\005\"\203\001\n\007Student\022\n\n\002id\030\001 \002(\t\022\020\n\010last" +
+      "name\030\002 \002(\t\022\021\n\tfirstname\030\003 \002(\t\022\r\n\005email\030\004" +
+      " \001(\t\0228\n\005marks\030\005 \003(\0132).com.agoodkind.stud" +
+      "entRecords.CourseMarks\"@\n\006Result\0226\n\007stud" +
+      "ent\030\001 \003(\0132%.com.agoodkind.studentRecords" +
+      ".StudentB+\n\034com.agoodkind.studentRecords" +
+      "B\013RecordProto"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_agoodkind_studentRecords_CourseMarks_descriptor =
+    internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_agoodkind_studentRecords_CourseMarks_fieldAccessorTable = new
+    internal_static_com_agoodkind_studentRecords_CourseMarks_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_agoodkind_studentRecords_CourseMarks_descriptor,
+        internal_static_com_agoodkind_studentRecords_CourseMarks_descriptor,
         new java.lang.String[] { "Name", "Score", });
-    internal_static_agoodkind_studentRecords_Student_descriptor =
+    internal_static_com_agoodkind_studentRecords_Student_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_agoodkind_studentRecords_Student_fieldAccessorTable = new
+    internal_static_com_agoodkind_studentRecords_Student_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_agoodkind_studentRecords_Student_descriptor,
+        internal_static_com_agoodkind_studentRecords_Student_descriptor,
         new java.lang.String[] { "Id", "Lastname", "Firstname", "Email", "Marks", });
-    internal_static_agoodkind_studentRecords_Result_descriptor =
+    internal_static_com_agoodkind_studentRecords_Result_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_agoodkind_studentRecords_Result_fieldAccessorTable = new
+    internal_static_com_agoodkind_studentRecords_Result_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_agoodkind_studentRecords_Result_descriptor,
+        internal_static_com_agoodkind_studentRecords_Result_descriptor,
         new java.lang.String[] { "Student", });
   }
 

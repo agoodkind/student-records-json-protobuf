@@ -1,7 +1,6 @@
 package com.agoodkind.studentRecords;
-import com.agoodkind.studentRecords.InputRecord;
 import com.agoodkind.studentRecords.RecordProto.Result;
-import com.agoodkind.studentRecords.SingleProtoBuilder;
+
 import java.util.List;
 
 public class ResultProtoBuilder {
