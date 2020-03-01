@@ -43,7 +43,7 @@ public class Parser {
         List<String> identifyingInfo = split(identifyingInfoString, ",");
 
         if (identifyingInfo.size() >= 1) {
-            currentRecord.setId(Integer.parseInt(identifyingInfo.get(0).replaceAll("[\\D]", "")));
+            currentRecord.setId(identifyingInfo.get(0));
             if (identifyingInfo.size() >= 2) {
                 currentRecord.setLastName(identifyingInfo.get(1));
                 if (identifyingInfo.size() >= 3) {

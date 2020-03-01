@@ -11,7 +11,7 @@ import java.util.*;
 class InputRecordFromStudentRecordProto {
     public static InputRecord convertRecord(Student studentRecordProto) {
         InputRecord parsed = new InputRecord();
-        parsed.setId(Integer.parseInt(studentRecordProto.getId()));
+        parsed.setId(studentRecordProto.getId());
         parsed.setFirstName(studentRecordProto.getFirstname());
         parsed.setLastName(studentRecordProto.getLastname());
 
@@ -120,7 +120,7 @@ class CourseMark {
 
 public class InputRecord {
     // <id>,<LastName>,<FirstName>,[<email>]:<Course1>,<Marks1>:<Course2>,<Mark s2>:...:<CourseN1>,<MarksN>
-    private Integer id;
+    private String id;
     @SerializedName(value = "lastname")
     private String LastName;
     @SerializedName(value = "firstname")
@@ -128,7 +128,7 @@ public class InputRecord {
     private String email;
     private ArrayList<CourseMark> CourseMarks = new ArrayList<>();
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -168,7 +168,7 @@ public class InputRecord {
         return this.CourseMarks.size() > 0;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

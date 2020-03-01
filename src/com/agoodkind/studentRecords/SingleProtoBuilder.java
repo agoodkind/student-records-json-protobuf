@@ -15,7 +15,7 @@ public class SingleProtoBuilder {
 
     public Student buildProto() {
         if (this.studentInputRecord.hasId()) {
-            this.studentRecordProtoBuilder.setId(Integer.toString(this.studentInputRecord.getId()));
+            this.studentRecordProtoBuilder.setId(this.studentInputRecord.getId());
         } else {
             this.studentRecordProtoBuilder.setId(Integer.toString(0));
         }
