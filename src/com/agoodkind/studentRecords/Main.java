@@ -1,3 +1,6 @@
+// program source can be found under src/com/agoodkind/studentRecords
+// the program is invoked via run.sh, to compile run `./run.sh -c`
+// the program can also be invoked by running `java com.agoodkind.studentRecords arg1 arg2 arg3`
 package com.agoodkind.studentRecords;
 
 import com.google.gson.Gson;
@@ -145,15 +148,5 @@ public class Main {
                 System.out.println(deSerializeProtoTimeElapsed);
             }
         }
-
-//        Parser parseTest = new Parser("/Users/alex/Desktop/input.txt");
-//		InputRecord re = parseTest.getInputRecords().get(0);
-//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-//
-//        String json = gson.toJson(parseTest.getInputRecords());
-//
-//        System.out.println(json.toString());
-//
-//        System.out.println(parseTest.getInputRecords().size());
     }
 }
